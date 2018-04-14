@@ -1,4 +1,5 @@
 config = {
+    'mode': 'local', # 'local' or 'hdfs'
     'etl': {
         'minutes': 1
     },
