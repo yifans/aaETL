@@ -1,7 +1,7 @@
 config = {
-    'mode': 'local', # 'local' or 'hdfs'
+    'mode': 'hdfs',  # 'local' or 'hdfs'
     'etl': {
-        'minutes': 1
+        'minutes': 10
     },
     'hdfs': {
         'host': '192.168.113.41',
