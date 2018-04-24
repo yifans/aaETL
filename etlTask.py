@@ -21,8 +21,8 @@ def etl():
         content = get_aa_data_txt(config['aa']['host'], pvitem, start_time, end_time)
         pv_name = pvitem.replace(':', '@') # hdfs上文件不能含有：，将pv中：替换为@
         file_name = pv_name \
-                    + '%' + str(start_timestamp) \
-                    + '%' + str(end_timestamp) \
+                    + '~' + str(start_timestamp) \
+                    + '~' + str(end_timestamp) \
                     + '.txt'
         if config['mode'] == 'local':
             local_path = config['local']['path'] + '/' + pv_name + '/' + file_name
